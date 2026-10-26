@@ -8,11 +8,27 @@ This project performs exploratory data analysis (EDA) and builds classification 
 
 The dataset contains **962 resumes** across **25 job categories**.
 
+## Dataset
+
+The dataset (`resume_dataset.csv`) contains two columns:
+- `Category` — job area label
+- `Resume` — raw resume text
+
 ## Pipeline
 
 ```
 Raw Resumes → Text Preprocessing (NLTK) → Vectorization (CountVectorizer) → Classification (MNB / KNN)
 ```
+
+## How to Run
+
+```bash
+conda create -n resume-screening python=3.11
+conda activate resume-screening
+pip install pandas numpy nltk scikit-learn seaborn matplotlib plotly nbformat ipykernel
+```
+
+Then open and run `solution.ipynb` in Jupyter or Google Colab.
 
 ## Features
 
@@ -30,22 +46,6 @@ Raw Resumes → Text Preprocessing (NLTK) → Vectorization (CountVectorizer) �
 |---|---|
 | Multinomial Naive Bayes | 98% |
 | K-Nearest Neighbors (k=3) | 100% |
-
-## Dataset
-
-The dataset (`resume_dataset.csv`) contains two columns:
-- `Category` — job area label
-- `Resume` — raw resume text
-
-## How to Run
-
-```bash
-conda create -n resume-screening python=3.11
-conda activate resume-screening
-pip install pandas numpy nltk scikit-learn seaborn matplotlib plotly nbformat ipykernel
-```
-
-Then open and run `solution.ipynb` in Jupyter or Google Colab.
 
 ## Notes
 

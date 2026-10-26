@@ -31,14 +31,6 @@ Raw Resumes → Text Preprocessing (NLTK) → Vectorization (CountVectorizer) �
 | Multinomial Naive Bayes | 98% |
 | K-Nearest Neighbors (k=3) | 100% |
 
-## Tech Stack
-
-- Python
-- Pandas, NumPy
-- NLTK
-- Scikit-learn
-- Seaborn, Matplotlib, Plotly
-
 ## Dataset
 
 The dataset (`resume_dataset.csv`) contains two columns:
